@@ -62,3 +62,28 @@ content-type: application/json
 
 DELETE https://nxapi-mongodb.vercel.app/api/users/6542da35c20d9ad95c739702
 content-type: application/json
+
+###
+
+GET http://localhost:3000/api/productos HTTP/1.1
+content-type: application/json
+
+### 
+
+POST http://localhost:3000/api/productos HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Pera", 
+    "edad": 5
+}
+
+###
+
+PUT http://localhost:3000/api/productos/65539e99223d71b35fd38e37 HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Fresa", 
+    "precio": 10
+}
